@@ -41,7 +41,7 @@ window.onload = () => {
         /*try {
           vd.src = 'vids/vid' + (parseInt(v.getAttribute('id')) + 1) + '.mp4'
         } catch (e) {*/
-          vd.src = arr[i][3]
+          vd.src = arr[ii][2]
         //}
         vd.setAttribute('poster', 'img/img' + (parseInt(v.getAttribute('id')) + 1) + '.png')
     })})

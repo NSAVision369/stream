@@ -4,3 +4,4 @@ https://github.com/NSAVision369/stream/releases/download/v1.0.0/vid1.mp4
 
 Bugatti Brouillard
 2026-06-01
+vids/vid2.mp4

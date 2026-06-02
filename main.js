@@ -29,7 +29,7 @@ window.onload = () => {
       bx.children[i].querySelector('.ttl').innerText = arr[i][0]
       bx.children[i].querySelector('.tb').src = 'img/img' + (i + 1) + '.png'
     }
-    bx.querySelectorAll('#bx > *').forEach(v => {
+    bx.querySelectorAll('#bx > *').forEach((v, ii) => {
       v.addEventListener('click', () => {
         ply.style.position = 'absolute'
         ply.style.bottom = '0dvh'
@@ -41,7 +41,7 @@ window.onload = () => {
         try {
           vd.src = 'vids/vid' + (parseInt(v.getAttribute('id')) + 1) + '.mp4'
         } catch (e) {
-          vd.src = 'https://github.com/NSAVision369/stream/releases/download/v1.0.0/vid' + (parseInt(v.getAttribute('id')) + 1) + '.mp4'
+          vd.src = arr[ii][3]
         }
         vd.setAttribute('poster', 'img/img' + (parseInt(v.getAttribute('id')) + 1) + '.png')
     })})

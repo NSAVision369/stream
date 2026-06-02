@@ -38,7 +38,11 @@ window.onload = () => {
           ply.style.position = 'fixed'
           history.pushState(null, '', '')
         }, 500)
-        vd.src = 'vids/vid' + (parseInt(v.getAttribute('id')) + 1) + '.mp4'
+        try {
+          vd.src = 'vids/vid' + (parseInt(v.getAttribute('id')) + 1) + '.mp4'
+        } catch (e) {
+          vd.src = 'https://github.com/NSAVision369'
+        }
         vd.setAttribute('poster', 'img/img' + (parseInt(v.getAttribute('id')) + 1) + '.png')
     })})
   })

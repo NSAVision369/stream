@@ -41,7 +41,7 @@ window.onload = () => {
         try {
           vd.src = 'vids/vid' + (parseInt(v.getAttribute('id')) + 1) + '.mp4'
         } catch (e) {
-          vd.src = 'https://github.com/NSAVision369'
+          vd.src = 'https://github.com/NSAVision369/stream/releases/download/v1.0.0/vid' + (parseInt(v.getAttribute('id')) + 1) + '.mp4'
         }
         vd.setAttribute('poster', 'img/img' + (parseInt(v.getAttribute('id')) + 1) + '.png')
     })})

@@ -38,11 +38,7 @@ window.onload = () => {
           ply.style.position = 'fixed'
           history.pushState(null, '', '')
         }, 500)
-        /*try {
-          vd.src = 'vids/vid' + (parseInt(v.getAttribute('id')) + 1) + '.mp4'
-        } catch (e) {*/
-          vd.src = arr[ii][2]
-        //}
+        vd.src = arr[ii][2]
         vd.setAttribute('poster', 'img/img' + (parseInt(v.getAttribute('id')) + 1) + '.png')
     })})
   })
@@ -59,6 +55,7 @@ gb.addEventListener('click', () => {
   ply.style.bottom = -ply.offsetHeight + 'px'
   ply.style.opacity = 0
   setTimeout(() => ply.style.position = 'fixed', 500)
+  history.back()
 })
 
 window.onpopstate = () => {
@@ -66,4 +63,4 @@ window.onpopstate = () => {
   ply.style.bottom = -ply.offsetHeight + 'px'
   ply.style.opacity = 0
   setTimeout(() => ply.style.position = 'fixed', 500)
-}
+        }

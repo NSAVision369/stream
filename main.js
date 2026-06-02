@@ -38,11 +38,11 @@ window.onload = () => {
           ply.style.position = 'fixed'
           history.pushState(null, '', '')
         }, 500)
-        try {
+        /*try {
           vd.src = 'vids/vid' + (parseInt(v.getAttribute('id')) + 1) + '.mp4'
-        } catch (e) {
+        } catch (e) {*/
           vd.src = arr[ii][3]
-        }
+        //}
         vd.setAttribute('poster', 'img/img' + (parseInt(v.getAttribute('id')) + 1) + '.png')
     })})
   })

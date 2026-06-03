@@ -54,6 +54,7 @@ gb.addEventListener('click', () => {
   ply.style.position = 'absolute'
   ply.style.bottom = -ply.offsetHeight + 'px'
   ply.style.opacity = 0
+  vd.stop()
   setTimeout(() => ply.style.position = 'fixed', 500)
   history.back()
 })
@@ -62,5 +63,6 @@ window.onpopstate = () => {
   ply.style.position = 'absolute'
   ply.style.bottom = -ply.offsetHeight + 'px'
   ply.style.opacity = 0
+  vd.stop()
   setTimeout(() => ply.style.position = 'fixed', 500)
         }
